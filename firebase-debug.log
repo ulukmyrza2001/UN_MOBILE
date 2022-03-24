@@ -1,0 +1,48 @@
+[debug] [2022-03-23T11:25:09.594Z] ----------------------------------------------------------------------
+[debug] [2022-03-23T11:25:09.595Z] Command:       /opt/homebrew/Cellar/node/16.10.0/bin/node /opt/homebrew/bin/firebase init hosting
+[debug] [2022-03-23T11:25:09.595Z] CLI Version:   10.0.1
+[debug] [2022-03-23T11:25:09.595Z] Platform:      darwin
+[debug] [2022-03-23T11:25:09.595Z] Node Version:  v16.10.0
+[debug] [2022-03-23T11:25:09.596Z] Time:          Wed Mar 23 2022 17:25:09 GMT+0600 (Kyrgyzstan Time)
+[debug] [2022-03-23T11:25:09.596Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-23T11:25:09.624Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-23T11:25:09.624Z] > authorizing via signed-in user (ariet.nyshanbaev@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ariet/Documents/workspace/UN/cm2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-03-23T11:25:09.626Z] Using project from CLI flag: enesay-237fc
+[debug] [2022-03-23T11:25:09.627Z] > refreshing access token with scopes: []
+[debug] [2022-03-23T11:25:09.627Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-23T11:25:09.875Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Wed, 23 Mar 2022 11:25:09 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-23T11:25:09.919Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/enesay-237fc [none]
+[debug] [2022-03-23T11:25:10.342Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/enesay-237fc 200
+[debug] [2022-03-23T11:25:10.342Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/enesay-237fc {"projectId":"enesay-237fc","projectNumber":"569221185944","displayName":"enesay","name":"projects/enesay-237fc","resources":{"hostingSite":"enesay-237fc","realtimeDatabaseInstance":"enesay-237fc-default-rtdb","storageBucket":"enesay-237fc.appspot.com","locationId":"europe-central2"},"state":"ACTIVE"}
+[info] i  Using project enesay-237fc (enesay) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
