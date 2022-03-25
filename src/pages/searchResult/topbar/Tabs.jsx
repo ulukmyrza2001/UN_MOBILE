@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useSearchParams } from 'react-router-dom';
 import { DATA_SET } from '../../../constants/documentTypes';
 import PARAM_NAME from '../../../constants/searchParams';
+import { DATA_CATALOG_URL } from './../../../api';
 
 const Container = styled.div`
 	width: 100%;
@@ -29,6 +30,9 @@ const Tabs = ({ documentTypeList }) => {
 	const [searchParams, setSearchParams] = useSearchParams();
 
 	function handleTabChange(e) {
+		if (e.key === DATA_SET) {
+			return window.open(`${DATA_CATALOG_URL}/dataset/?q=${searchParams.get(PARAM_NAME.SEARCH_TEXT)}`, '_blank').focus();;
+		}
 		setSearchParams({
 			[PARAM_NAME.SEARCH_TEXT]: searchParams.get(PARAM_NAME.SEARCH_TEXT),
 			[PARAM_NAME.PAGE_INDEX]: 1,

@@ -83,6 +83,7 @@ const SearchResult = () => {
 					const script = document.createElement('script');
 					const divWithId = document.createElement('div');
 					divWithId.setAttribute('id', vizualizationScript.divId);
+					divWithId.style = "margin-bottom: 60px"
 					chartParentNode.appendChild(divWithId);
 
 					script.onload = function () {
@@ -94,6 +95,7 @@ const SearchResult = () => {
 				});
 			}
 		} catch (error) {
+			console.log('error is =========> ', error);
 			notification.error({
 				placement: 'bottomLeft',
 				message: 'Error occurred',
@@ -185,6 +187,10 @@ const SearchResult = () => {
 		}
 
 		if (!searchResults.length) {
+			const chartParentNode = document.getElementById('chart-container');
+
+			chartParentNode.innerHTML = '';
+
 			return (
 				<SearchResultContainer>
 					<Empty description="No data found based on your search and filters" />

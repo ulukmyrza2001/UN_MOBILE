@@ -5,7 +5,7 @@ export const DATA_CATALOG_URL = 'http://data-plasticfreerivers.westeurope.clouda
 
 export const PAGE_SIZE = 12;
 
-export const searchDataset = async ({ searchText, pagination }) => {
+export const searchDataset = async ({ searchText }) => {
 	const response = await fetch(`${DATA_CATALOG_URL}/api/3/action/package_search?q=${searchText}&rows=100`);
 
 	return response.json();
