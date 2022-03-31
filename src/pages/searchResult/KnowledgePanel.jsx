@@ -5,6 +5,9 @@ const Container = styled.div`
 	border: 1px solid #E2E2E2;
 	border-radius: 4px;
 	margin-bottom: 30px;
+	max-width: 445px;
+	min-width: 350px;
+	
 `;
 
 const Title = styled.span`

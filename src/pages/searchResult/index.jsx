@@ -227,11 +227,12 @@ const SearchResult = () => {
 					<ResultList>
 						<ChartContainer id="chart-container">
 						</ChartContainer>
-						{renderSearchResultList()}
-					</ResultList>
-					<KnowledgePanelContainer>
 						{renderKnowledgePanel()}
-					</KnowledgePanelContainer>
+					</ResultList>
+					{renderSearchResultList()}
+					{/* <KnowledgePanelContainer>
+						
+					</KnowledgePanelContainer> */}
 				</ResultContainer>
 				<PaginationContainer>
 					<Pagination

@@ -7,11 +7,12 @@ import PARAM_NAME from '../../../constants/searchParams';
 import { DATA_CATALOG_URL } from './../../../api';
 
 const Container = styled.div`
-	width: 100%;
+    max-width: 1100px;
+	margin: 0 auto;
 `;
 
 const StyledMenu = styled(Menu)`
-	padding-left: 160px;
+  margin-bottom: 20px;
 `;
 
 const MenuItemText = styled.span`
